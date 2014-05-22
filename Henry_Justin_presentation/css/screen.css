@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "reset.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 
 /* CSS Document */
@@ -12,13 +13,15 @@
 */
 
 
-body { background: #333; font:14px/21px Helvetica, Arial, sans-serif; color: white; margin: 0; padding: 0; }
+body { background: #333; font:14px 'Open Sans Condensed', Arial, sans-serif; color: white; margin: 0; padding: 0; }
 a { color: #ccc; text-decoration: underline; }
 a:hover { color: #fb2b2b; }
-h1, h2 { font-size: 26px; line-height: 28px; font-weight: normal; letter-spacing: -1px; color: #fff; }
-h3 { font-size: 18px; font-weight: normal; margin: 8px 0; }
-h4 { font-size: 14px; font-weight: normal; margin: 0; }
-h5 { font-size: 12px; font-weight: normal; margin: 0; }
+h2, h3, h4, h5, p { margin: 8px 0 0 8px;}
+h1 { font-size: 66px; line-height: 68px; margin: 8px 0 0 5px;}
+h2 { font-size: 38px; line-height: 58px; }
+h3 { font-size: 30px; line-height: 50px; }
+h4 { font-size: 12px; }
+p {font-size: 24px; line-height: 48px;}
 ul { margin-left: 20px; }
 ol { margin-left: 36px; }
 
@@ -33,7 +36,7 @@ ol { margin-left: 36px; }
 #wrapper { width: 100%; margin: 0; padding: 48px 0 72px; position: relative;}
 #main { width: 640px; float: left;}
 #main > p, #main > div { margin-left: 7px; }
-#sidebar { width: 200px; position:fixed; right: 0; top: 0;}
+#sidebar { width: 180px; position:fixed; right: 0; top: 0; ;}
 #sidebar ol { margin: 12px 0 12px 22px; }
 /*
 	----------------------------
@@ -41,10 +44,12 @@ ol { margin-left: 36px; }
 	____________________________
 */
 
-
-#video-controls { width: 333px; }
-#video-controls a { color: #ddd; text-decoration: underline; }
-
+#sidebar h3 {text-align: center; margin: 0;}
+#sidebar a { display: inline-block; text-decoration: none; text-align: center; font-size: 24px; height: 36px; border-bottom: 1px solid rgba(255,255,255,0);}
+#sidebar a:hover { border-bottom: 1px solid white; color: white; background-color: rgba(255,255,255,.4)}
+.tubular-volume-up, .tubular-play { width:86px; border-right: 1px solid white; margin: 0;}
+.tubular-volume-down, .tubular-pause { width:86px; border-left: 1px solid white; margin: 0;}
+.tubular-mute { width: 180px; border-bottom: 1px solid white; margin-top: 10px;}
 
 /*
 	----------------------------
