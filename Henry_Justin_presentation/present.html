@@ -37,12 +37,102 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				
-                <!--<section> go here-->
-        		
+                <section>
+                	<h3>Justin "Doc Deuce" Henry</h3>
+                    <h5>presents</h5>
+                    <h1>Tubular</h1>
+                </section>
+                
+                <section>
+            		<p>I chose to demonstrate Tubular</p>
+                    <img src=images/logo.png alt="tubular logo" />
+                    <p>Tubular is a jQuery plugin that lets you set a YouTube video as your page background.</p>
+                </section>
+                
+				<section>
+                	<p>See it in action:</p>
+                    <a href=http://www.seanmccambridge.com/tubular>www.seanmccambridge.com/tubular</a>
+                	<iframe src=http://www.seanmccambridge.com/tubular/ width=100% height="500"></iframe>
+                </section>
+                
+                <section>
+                	<h1>Why</h1>
+                	<p>I chose to work with Tubular because, as a business owner, I plan to use my web development skills to my own advantage. The importance of engaging marketing cannot be overstated in a world filled to its brim with media. When I came across the Tubular website, I was immediately engaged by a moving background. Though the content of the site was secondary to my attention, the video background made it easier to stick around and read through the text. Keeping site visitors around for longer increases opportunity for conversion and that's definitely a goal of mine.</p>
+                </section>
+                
+                <section>
+                	<section>
+                   		<h1>How</h1>
+                    	<p>After downloading the files from Google Code, I had everything that made the demo site and the means to manifest my own ideas.</p>
+                    </section>
+                    <section>
+                    	<p>This plugin requires jQuery so it is necessary to link to it in your html file.</p>
+                        <p><small>Include the following code in the head:</small></p>
+                        <pre><code>
+&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+                        </pre></code>
+                        <p>The js folder is really all that is necessary but the css folder contains a reset and the means to sylize one's page similarly to the demo.</p>
+                        <p><small>Link to the js files in the head:</small></p> 
+                        <pre><code>
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;js/jquery.tubular.1.0.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;js/index.js&quot;&gt;&lt;/script&gt;                        
+                        </pre></code>    
+                    </section>                   
+                    <section>
+                    	<p>I decided to use and modify the css that was provided. If you decide to do the same, note that you'll only need to link screen.css in your html file because it actually imports reset.css.</p>
+                        <p><small>Link to css in head:</small></p>
+                        <pre><code>
+&lt;link href=&quot;css/screen.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt; 
+                        </pre></code> 
+                        <p><small>screen.css contains the following:</p></small>
+                        <pre><code>
+@import &quot;reset.css&quot;;
+                        </pre></code>
+                        <p><small>So it is unecessary to link reset.css in the head of the html file</p></small>
+                    </section>
+                    <section>
+                    	<p>In order to include a YouTube video as the background of a web page, Tubular requires just one more thing in the httml file. The very first div to be created will be the container and should have a specific id of "wrapper" so it can be modified by Javascript.</p>
+                        <p><small>Create a div and with the id "wrapper" as the container for all content:</p></small>
+                        <pre><code> 
+&lt;div id=&quot;wrapper&quot;&gt;
+&lt;!-- Include all page content within this div --&gt;
+&lt;/div&gt;
+                        </pre></code> 
+                    </section>
+                    <section>
+                    	<p>At this point, Tubular is all set to run a video as the background of a web page. However, there are just a couple more steps if you want to specify the video that plays.</p>
+                        <p><small>Find the id of the YouTube video you want to show:</p></small>
+                        <img src=images/ytid.jpg alt="YouTube video ID"/>
+                        <p><small>Replace the video id line 2 of index.js:</p></small>
+                        <pre><code>var options = { videoId: 'e4Is32W-ppk', start: 3 }; //Before
+var options = { videoId: 'SuuMjjfDb2Y', start: 0 }; //After</pre></code> 
+                        <p><small>And, for assurances, replace the video id in line 20 of jquery.tubular.1.0.js which establishes defaults:</p></small>
+                        <pre><code>videoId: 'ZCAnLxRvNNc', //Before
+videoId: 'SuuMjjfDb2Y', //After</pre></code>
+                    </section>
+                </section>
+                
               
-    		
-                	
-
+                <section>
+                	<h1>Where</h1>
+                    <p>In order to function, a page running Tubular most be hosted on a web server and will not work locally. I used GitHub to host my demo.<p>
+                </section>
+                <section>
+                	<h1>When</h1>
+                    <p>After the aformentioned inclusions and a few modifications to the css, the following was created:<p>
+                    <iframe src=http://docdeuce.github.io/WIA-Assignments/Henry_Justin_presentation/index.html width=100% height="500"></iframe>
+                </section>
+                <section></section>
+                
+                
+                
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                <section></section>
+                
+				
 			</div>
 
 		</div>
