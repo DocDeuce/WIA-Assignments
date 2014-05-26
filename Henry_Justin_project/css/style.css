@@ -1,0 +1,53 @@
+body{
+    width: 99%;
+    margin-right: 2px;
+}
+header{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+svg{
+    width: 100%;
+    max-width: 100%;
+	margin: 0 auto;
+
+
+}
+#navi{
+	display: block;
+    width: 99%;
+    margin: 0 auto;
+    padding: 0;
+	overflow: hidden;
+}
+#navi li{
+    float: left;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Michroma", sans-serif;
+
+}
+#navi li a{
+    text-decoration: none;
+	color: #1A6E84;
+	display: block;
+}
+#navi li a:vvisited{
+	color: #1A6E84;
+}
+
+
+.followFit, #fitMe{
+
+}
+.alignRight{
+	text-align: right; 
+}
+#content{
+	clear: both;
+	margin-top: 20px;
+}
