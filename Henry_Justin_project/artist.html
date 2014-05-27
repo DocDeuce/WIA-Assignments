@@ -1,3 +1,5 @@
+<script src="js/lightbox-2.6.min.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
 <style type="text/css">
 
 .left{
@@ -28,16 +30,61 @@ h1{
 	margin: 0;
 	padding: 0;
 }
+div.gallery {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+.gallery ul {
+	padding: 2%;
+	overflow: hidden;
+	border: 1px solid red;
+	/*margin: 2% 0px;*/
+}
+.gallery li {
+	list-style-type: none;
+	float: left;
+	width: 25%;
+	margin-left: 6%;
+	box-shadow: 3px 3px 8px #8290e8;
+}
+.gallery a {
+	display: block;
+	width: 100%;
+}
+.gallery a:visited {
+	border: 3px solid navy;
+}
+
+.gallery a:active {
+	border: 3px solid #edf8fa;
+}
+.gallery img {
+	width: 100%;
+	max-width: 100%;	
+}
 </style>
 <body>
-<div class="left">
-	<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-    <div class="leftbottom">
-        <canvas id="arrow" width="80" height="90"></canvas>
-        <h1>Use the player below to listen to some of my music while you look around</h1>
+    <div class="left">
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+        <div class="leftbottom">
+            <canvas id="arrow" width="80" height="90"></canvas>
+            <h1>Use the player below to listen to some of my music while you look around</h1>
+        </div>
     </div>
-</div>
-<div class="right">
-<h2>Oh yeah. STUFF.</h2>
-</div>
+    
+    <div class="right">
+        <h2>Oh yeah. STUFF.</h2>
+        <div class="gallery">
+            <ul>
+                    <li><a href="images/DrawingLarge.jpg" data-lightbox="artist" title="My first artistic passion was drawing. This one is 15 years old.">
+                        <img src="images/DrawingSmall.jpg" alt="Drawing"></a></li>               
+                     <li><a href="images/FlyerLarge.jpg" data-lightbox="artist" title="I'm most well known for my music and performing but I also designed this flyer.">
+                        <img src="images/FlyerSmall.jpg" alt="Flyer"></a></li>                 
+                     <li><a href="images/LogoLarge.jpg" data-lightbox="artist" title="This is a logo I designed for an Austin jazz band.">
+                        <img src="images/LogoSmall.jpg" alt="Logo"></a></li>                 
+             </ul>
+         </div>
+    </div>
+    
 </body>
