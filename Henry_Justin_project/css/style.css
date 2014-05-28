@@ -13,7 +13,7 @@ header{
     max-width: 100%;
 	margin: 0 auto;
 }*/
-svg, img {
+svg, svg img {
   display: block;
   width: 100%;
   max-width: 100%;
