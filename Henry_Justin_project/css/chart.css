@@ -3,9 +3,8 @@
 
 @charset "UTF-8";
 
-body { font-family: Arial; font-size: 12px; }
 
-.chart-container { width: 557px; float: right;}
+.chart-container { font-family: Arial; font-size: 12px; width: 557px; float: right;}
 
 .chart-title { background-color: #30C9CE; padding: 5px 0px 10px 15px; margin: 0px; }
 .chart-title h2 { margin: 0px; color: #fff; font-family: Georgia; }
