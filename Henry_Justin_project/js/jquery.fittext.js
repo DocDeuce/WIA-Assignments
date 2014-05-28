@@ -27,7 +27,6 @@
 	
 		var follow = function(lead){
 			$('.followFit').css('font-size', lead);
-			console.log(lead);
 		};
       // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {

@@ -170,9 +170,9 @@ body:after {
 }
 /* line 111, ../sass/lightbox.sass */
 .lb-data .lb-caption {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1em;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 19px;
+  line-height: 1.2em;
 }
 /* line 115, ../sass/lightbox.sass */
 .lb-data .lb-number {

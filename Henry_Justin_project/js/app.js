@@ -10,6 +10,15 @@ angular.module("MyApp",['ngRoute'])
 	}).when('/marketer',{
 		templateUrl : "marketer.html",
 		controller : "MarketerController"
+	}).when('/educator',{
+		templateUrl : "educator.html",
+		controller : "EducatorController"
+	}).when('/speaker',{
+		templateUrl : "speaker.html",
+		controller : "SpeakerController"
+	}).when('/host',{
+		templateUrl : "host.html",
+		controller : "HostController"
 	}).when('/overview',{
 		templateUrl : "overview.html",
 		controller : "OverviewController"
@@ -49,12 +58,13 @@ angular.module("MyApp",['ngRoute'])
 
 })
 .controller("ArtistController",function($scope){
+	
 	if(Modernizr.canvas){
 	var canvas1 = document.getElementById("arrow");
     var ctx = canvas1.getContext("2d");
 	
-    ctx.strokeStyle = "black";
-    ctx.fillStyle = "blue";
+    ctx.strokeStyle = "#30C9CE";
+    ctx.fillStyle = "#1A6E84";
     ctx.lineWidth=1;
 
 	ctx.beginPath();
@@ -65,7 +75,7 @@ angular.module("MyApp",['ngRoute'])
 	ctx.lineTo(20,60);
 	ctx.lineTo(0,60);
 	ctx.closePath();
-	ctx.stroke();
+	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.moveTo(40,60);
@@ -75,7 +85,7 @@ angular.module("MyApp",['ngRoute'])
 	ctx.lineTo(20,30);
 	ctx.lineTo(0,30);
 	ctx.closePath();
-	ctx.stroke();
+	ctx.fill();
 	
 	ctx.beginPath();
 	ctx.moveTo(40,30);
@@ -85,7 +95,7 @@ angular.module("MyApp",['ngRoute'])
 	ctx.lineTo(20,0);
 	ctx.lineTo(0,0);
 	ctx.closePath();
-	ctx.stroke();	
+	ctx.fill();	
 	};
 	
 	setInterval(function(){	
@@ -93,12 +103,6 @@ angular.module("MyApp",['ngRoute'])
 	$("#arrow").fadeOut(3000);
 	$("#arrow").fadeIn(3000);			
 	});},6000);
-	
-	$(window).unload(function(){
-		$('#lightboxOverlay' ).remove();
-		console.log("You go, Boyee!");
-	});
-	
 
 })
 
@@ -107,6 +111,18 @@ angular.module("MyApp",['ngRoute'])
 })
 
 .controller("MarketerController",function($scope){
+
+})
+
+.controller("EducatorController",function($scope){
+
+})
+
+.controller("SpeakerController",function($scope){
+
+})
+
+.controller("HostController",function($scope){
 
 })
 
@@ -149,6 +165,7 @@ angular.module("MyApp",['ngRoute'])
 	$scope.overview = function(){
 		window.location = "#/overview";
 	}
+	
 })
 
 

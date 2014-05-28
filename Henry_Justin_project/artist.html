@@ -3,34 +3,69 @@
 <link href="css/lightbox.css" rel="stylesheet" />
 </head>
 <style type="text/css">
-
+#artistBox{
+	/*border: 1px solid black;*/
+	width: 100%;
+}
 .left{
 	overflow: hidden;
 	float: left;
-	width: 61.8%;
+	width: 47.7%;
 	margin: 0;
-	padding: 0;
-	border: 1px solid green;
+	margin-right: 4%;
+	padding: 15px 6%;
+	border: 1px solid #1A6E84;
+	border-left: none;
+	border-bottom: 20px solid #30C9CE;
 }
 .left p{
-	border: 1px solid red;
+	/*border: 1px solid blue;*/
+	margin: 0;
+	margin-top: 10px;
 }
 .leftbottom{
+	display: block;	
 	margin: 0;
-	padding: 0;
+	/*background-color: #1A6E84;*/
+	margin-top: 100px;
+	padding: 2px 0;
+	
 }
 canvas {
 	float: left;
 }
 h1{
-	display: block;
+	
+	line-height: 1em;
+}
+h2{
+	/*margin-left: 6%;
+	border: 1px solid blue;*/
+	line-height: 1em;
+}
+h3{
+	overflow: hidden;
+	width: 350px;
+	height: 90px;
+	margin-left: 10px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #30C9CE;
+	text-align: center;
+	background-color: #1A6E84;
 }
 .right{
-		overflow: hidden;
-	width: 37%;
-	border: 1px solid gray;
+	overflow: hidden;
+	
+	width: 24.1%;
+	border: 1px solid #1A6E84;
+	border-right: none;
+	border-bottom: 10px solid #30C9CE;
 	margin: 0;
-	padding: 0;
+	padding: 15px 6%;
+}
+.right p{
+	margin-top: 15px;
 }
 div.gallery {
 	width: 100%;
@@ -38,60 +73,71 @@ div.gallery {
 	overflow: hidden;
 }
 .gallery ul {
-	padding: 2%;
+	padding: 0;
 	overflow: hidden;
-	border: 1px solid red;
-	/*margin: 2% 0px;*/
+	/*border: 1px solid red;
+	margin: 2% 0px;
+	*/
 }
 .gallery li {
 	list-style-type: none;
 	float: left;
-	width: 25%;
-	margin-left: 6%;
-	box-shadow: 3px 3px 8px #8290e8;
+	width: 30%;
+	margin-right: 5%;
+	border-bottom: 5px solid #1A6E84;
+	/*box-shadow: 3px 3px 8px #1A6E84;*/
+}
+#last {
+	margin: 0;
 }
 .gallery a {
 	display: block;
 	width: 100%;
 }
 .gallery a:visited {
-	border: 3px solid navy;
+	
 }
 
 .gallery a:active {
-	border: 3px solid #edf8fa;
+	
 }
 .gallery img {
 	width: 100%;
 	max-width: 100%;	
 }
+.hilite{
+	color: white;
+}
 </style>
 <body>
-    <div class="left">
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-        <div class="leftbottom">
-            <canvas id="arrow" width="80" height="90"></canvas>
-            <h1>Use the player below to listen to some of my music while you look around</h1>
+	<div id="artistBox">
+        <div class="left">
+        <h1>Headline</h1>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+            
         </div>
+        
+        <div class="right">
+            <h2>Oh yeah. STUFF.</h2>
+            <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+            <div class="gallery">
+                <ul>
+                        <li><a href="images/DrawingLarge.jpg" data-lightbox="artist" title="My first artistic passion was drawing. This one is 15 years old.">
+                            <img src="images/DrawingSmall.jpg" alt="Drawing"></a></li>               
+                         <li><a href="images/FlyerLarge.jpg" data-lightbox="artist" title="I'm most well known for my music and performing but I also designed this flyer.">
+                            <img src="images/FlyerSmall.jpg" alt="Flyer"></a></li>                 
+                         <li id="last"><a href="images/LogoLarge.jpg" data-lightbox="artist" title="This is a logo I designed for an Austin jazz band.">
+                            <img src="images/LogoSmall.jpg" alt="Logo"></a></li>                 
+                 </ul>
+             </div>
+        </div>
+        
+        <div class="leftbottom">
+                <canvas id="arrow" width="80" height="90"></canvas>
+                <h3 id="fitIt">Use the player below to<br /> <span class="hilite">listen to some of my music</span> <br />while you look around</h3>
+                
+            </div>
+        
     </div>
-    
-    <div class="right">
-        <h2>Oh yeah. STUFF.</h2>
-        <div class="gallery">
-            <ul>
-                    <li><a href="images/DrawingLarge.jpg" data-lightbox="artist" title="My first artistic passion was drawing. This one is 15 years old.">
-                        <img src="images/DrawingSmall.jpg" alt="Drawing"></a></li>               
-                     <li><a href="images/FlyerLarge.jpg" data-lightbox="artist" title="I'm most well known for my music and performing but I also designed this flyer.">
-                        <img src="images/FlyerSmall.jpg" alt="Flyer"></a></li>                 
-                     <li><a href="images/LogoLarge.jpg" data-lightbox="artist" title="This is a logo I designed for an Austin jazz band.">
-                        <img src="images/LogoSmall.jpg" alt="Logo"></a></li>                 
-             </ul>
-         </div>
-    </div>
-    <script type="text/javascript">
-    	window.unload=function(){
-		$('#lightboxOverlay' ).remove();
-		console.log("You go, Boyee!");
-	};
-    </script>
+
 </body>

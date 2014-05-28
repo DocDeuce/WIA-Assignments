@@ -4,10 +4,10 @@
 @charset "UTF-8";
 
 
-.chart-container { font-family: Arial; font-size: 12px; width: 557px; float: right;}
+.chart-container {  font-size: 12px; width: 557px; float: right;}
 
-.chart-title { background-color: #30C9CE; padding: 5px 0px 10px 15px; margin: 0px; }
-.chart-title h2 { margin: 0px; color: #fff; font-family: Georgia; }
+.chart-title { background-color: #1A6E84; padding: 5px 0px 10px 15px; margin: 0px; }
+.chart-title h2 { margin: 0px; color: #fff; }
 .chart-title p { margin: 0px; color: #222; }
 
 .chart-content { height: 340px; position: relative; overflow: hidden; margin: 5px 0px 0px 0px; }
@@ -23,7 +23,9 @@
 	position: absolute;
 	top: 0px;
 	left: 50px;
-	background: #fff url(../images/background.jpg) no-repeat 0px 0px;
+	/*background-color: #F0F0F0;
+	background: #fff url(../images/background.jpg) no-repeat 0px 0px;*/
+	
 }
 
 .chart-area .chart-bar {
@@ -39,16 +41,18 @@
 	border-top-right-radius: 10px;
 	background-repeat: no-repeat;
 	background-position: 50% bottom;
+	 border: 1px solid #1A6E84;
+	 border-bottom: none;
 }
 
-.chart-area .chart-bar.artist    { background-color: rgba(12,38,32,.6);}
-.chart-area .chart-bar.webdev { background-color: rgba(65,12,137,.6); }
-.chart-area .chart-bar.marketer    { background-color: rgba(4,11,83,.6); }
-.chart-area .chart-bar.educator    { background-color: rgba(140,6,6,.6);}
-.chart-area .chart-bar.speaker     { background-color: rgba(144,8,152,.6);}
-.chart-area .chart-bar.host     { background-color: rgba(144,8,152,.6);}
+.chart-area .chart-bar.artist    { background-color: rgba(21,96,115,.6);}
+.chart-area .chart-bar.webdev { background-color: rgba(210,240,247,.6);}
+.chart-area .chart-bar.marketer    { background-color: rgba(59,176,205,.6); }
+.chart-area .chart-bar.educator    { background-color: rgba(49,133,154,.6);}
+.chart-area .chart-bar.speaker     { background-color: rgba(145,209,225,.6);}
+.chart-area .chart-bar.host     { background-color: rgba(115,193,213,.6);}
 
-.chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #fff; display: none; }
+.chart-area .chart-bar p { margin: 5px 0px 0px 0px; text-align: center; color: #1A6E84; display: none; }
 
 
 

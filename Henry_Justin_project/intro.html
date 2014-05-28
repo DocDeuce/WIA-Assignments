@@ -1,13 +1,57 @@
 <style type="text/css">
-canvas{
+
+#introBox{
+	/*border: 1px solid green;*/
+}
+#introBox a{
+	display: block;
+	width: 240px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	margin: 0 auto;
+	text-decoration: none;
+	background-color: #1A6E84;
+	color: white;
+	font-size: 20px;
+}
+#introBox a:visited{
+	color: white;
+}
+#introBox a:hover{
+	color: #1A6E84;
+	background-color: white;
+}
+#introBox a:active{
+	border: 1px solid #1A6E84;
+	height: 46px;
+}
+.top{
+	width: 100%;
+}
+.bottom{
 	
+	/*border: 2px solid purple;*/
+}
+#bizcard{
+	/*border: 1px solid red;*/
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 460px;
 }
 </style>
 
-<div>
-<h2>Hello!</h2>
-<p>Welcome to my website. Thanks for dropping by. I will be making tacos later. Bring some beer and we can make this a party!</p>
-<a href="#/overview">Overview</a>
+<div id="introBox">
+    <div class="top">
+        <h1>Hello!</h1>
+        <p>Welcome to my website. Thanks for dropping by. I will be making tacos later. Bring some beer and we can make this a party!</p>
+        <a href="#/overview">-Overview-</a>
+    </div>
+    <div class="bottom">
+    <canvas id="bizcard" height="460px" width="460px"></canvas>
+    </div>
+    <img id="resdes" src="images/ResignDesign.jpg" width="236px" height="402px" style="display:none;"/>
 </div>
-<canvas id="bizcard" height="460px" width="460px"></canvas>
-<img id="resdes" src="images/ResignDesign.jpg" width="236px" height="402px" style="display:none;"/>

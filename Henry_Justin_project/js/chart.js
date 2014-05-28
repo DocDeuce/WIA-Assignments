@@ -12,7 +12,7 @@ var valueMultiplier = 0;
 
 $(document).ready(function(){
 
-	window.chartHeight = Number($('.chart-area').height());
+	window.chartHeight = Number(($('.chart-area').height())-1); //Slight edit so a 1px border can be added to chart bars
 	window.barWidth = $('.chart-area .chart-bar').width();
 	window.highestYlabel = Number($('.chart-y-axis p').first().html());
 	window.chartHeightArea = window.chartHeight - Number($('p.axis-value').first().height());
