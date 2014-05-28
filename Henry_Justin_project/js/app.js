@@ -94,7 +94,10 @@ angular.module("MyApp",['ngRoute'])
 	$("#arrow").fadeIn(3000);			
 	});},6000);
 	
-	
+	$(window).unload(function(){
+		$('#lightboxOverlay' ).remove();
+		console.log("You go, Boyee!");
+	});
 	
 
 })
@@ -117,9 +120,7 @@ angular.module("MyApp",['ngRoute'])
 	}
 	for(k=0, l=navLinks.length;k<l;k++){
 		var len = navLinks[k].innerHTML.length;
-		/*sumDiv[k]=len;
-		total += len;*/
-		console.log(navLinks[k].innerHTML.length);
+		/*console.log(navLinks[k].innerHTML.length);*/
 		if(navLinks[k].innerHTML.length == 19){
 			sumDiv[k]=(len-1);
 			total += len;
@@ -137,21 +138,13 @@ angular.module("MyApp",['ngRoute'])
 			sumDiv[k]=(len-1.4);
 			total += len;
 		}
-		
-		/*if(navLinks[k].innerHTML.lastIndexOf(" ") == 1){
-			sumDiv[k]=len;
-			total += len;
-		}else{
-			sumDiv[k]=len+1;
-			total += len;
-		}*/		 
+		 
 	}
-	console.log(sumDiv);
-	console.log(total);		
+	/*console.log(sumDiv);
+	console.log(total);*/		
 	for(m=0, n=sumDiv.length;m<n;m++){
 		navList[m].style.width = (sumDiv[m]/total)*100 + "%";
-	}		
-	
+	}			
 	
 	$scope.overview = function(){
 		window.location = "#/overview";
