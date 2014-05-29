@@ -7,27 +7,10 @@
 	/*border: 1px solid black;*/
 	width: 100%;
 }
-.left{
-	overflow: hidden;
-	float: left;
-	width: 47.7%;
-	margin: 0;
-	margin-right: 4%;
-	padding: 15px 6%;
-	border: 1px solid #1A6E84;
-	border-left: none;
-	border-bottom: 20px solid #30C9CE;
-}
-.left p{
-	/*border: 1px solid blue;*/
-	margin: 0;
-	margin-top: 10px;
-}
-.leftbottom{
+.bottom{
 	display: block;	
 	margin: 0;
 	/*background-color: #1A6E84;*/
-	margin-top: 100px;
 	padding: 2px 0;
 	
 }
@@ -54,19 +37,6 @@ h3{
 	text-align: center;
 	background-color: #1A6E84;
 }
-.right{
-	overflow: hidden;
-	
-	width: 24.1%;
-	border: 1px solid #1A6E84;
-	border-right: none;
-	border-bottom: 10px solid #30C9CE;
-	margin: 0;
-	padding: 15px 6%;
-}
-.right p{
-	margin-top: 15px;
-}
 div.gallery {
 	width: 100%;
 	margin: 0;
@@ -75,23 +45,17 @@ div.gallery {
 .gallery ul {
 	padding: 0;
 	overflow: hidden;
-	/*border: 1px solid red;
-	margin: 2% 0px;
-	*/
 }
 .gallery li {
-	list-style-type: none;
 	float: left;
 	width: 30%;
 	margin-right: 5%;
-	border-bottom: 5px solid #1A6E84;
-	/*box-shadow: 3px 3px 8px #1A6E84;*/
+	border-top: 10px solid #1A6E84;
 }
 #last {
 	margin: 0;
 }
 .gallery a {
-	display: block;
 	width: 100%;
 }
 .gallery a:visited {
@@ -101,38 +65,34 @@ div.gallery {
 .gallery a:active {
 	
 }
-.gallery img {
-	width: 100%;
-	max-width: 100%;	
-}
 .hilite{
 	color: white;
 }
 </style>
 <body>
 	<div id="artistBox">
-        <div class="left">
-        <h1>Headline</h1>
+    
+        <div class="leftLarge">
+        	<h1>Headline</h1>
             <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-            
         </div>
         
-        <div class="right">
+        <div class="rightSmall">
             <h2>Oh yeah. STUFF.</h2>
             <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
             <div class="gallery">
                 <ul>
-                        <li><a href="images/DrawingLarge.jpg" data-lightbox="artist" title="My first artistic passion was drawing. This one is 15 years old.">
-                            <img src="images/DrawingSmall.jpg" alt="Drawing"></a></li>               
-                         <li><a href="images/FlyerLarge.jpg" data-lightbox="artist" title="I'm most well known for my music and performing but I also designed this flyer.">
-                            <img src="images/FlyerSmall.jpg" alt="Flyer"></a></li>                 
-                         <li id="last"><a href="images/LogoLarge.jpg" data-lightbox="artist" title="This is a logo I designed for an Austin jazz band.">
-                            <img src="images/LogoSmall.jpg" alt="Logo"></a></li>                 
+                	<li><a href="images/DrawingLarge.jpg" data-lightbox="artist" title="My first artistic passion was drawing. This one is 15 years old.">
+                    	<img src="images/DrawingSmall.jpg" alt="Drawing"></a></li>               
+                    <li><a href="images/FlyerLarge.jpg" data-lightbox="artist" title="I'm most well known for my music and performing but I also designed this flyer.">
+                        <img src="images/FlyerSmall.jpg" alt="Flyer"></a></li>                 
+                    <li id="last"><a href="images/LogoLarge.jpg" data-lightbox="artist" title="This is a logo I designed for an Austin jazz band.">
+                        <img src="images/LogoSmall.jpg" alt="Logo"></a></li>                 
                  </ul>
              </div>
         </div>
         
-        <div class="leftbottom">
+        <div class="bottom">
                 <canvas id="arrow" width="80" height="90"></canvas>
                 <h3 id="fitIt">Use the player below to<br /> <span class="hilite">listen to some of my music</span> <br />while you look around</h3>
                 

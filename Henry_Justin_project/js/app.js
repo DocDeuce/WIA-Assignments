@@ -63,7 +63,6 @@ angular.module("MyApp",['ngRoute'])
 	var canvas1 = document.getElementById("arrow");
     var ctx = canvas1.getContext("2d");
 	
-    ctx.strokeStyle = "#30C9CE";
     ctx.fillStyle = "#1A6E84";
     ctx.lineWidth=1;
 
