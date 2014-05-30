@@ -3,7 +3,6 @@
 
 @charset "UTF-8";
 
-
 .chart-container {  font-size: 12px; width: 557px; margin: 0 auto;}
 
 .chart-title { background-color: #1A6E84; padding: 5px 0px 10px 15px; margin: 0px; }
@@ -23,10 +22,7 @@
 	position: absolute;
 	top: 0px;
 	left: 50px;
-	border-bottom: 1px solid #888;
-	/*background-color: #F0F0F0;
-	background: #fff url(../images/background.jpg) no-repeat 0px 0px;*/
-	
+	border-bottom: 1px solid #888;	
 }
 
 .chart-area .chart-bar {

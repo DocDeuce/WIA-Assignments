@@ -24,11 +24,11 @@
 
       // Store the object
       var $this = $(this);
-	
+		//A little addition to make other font sizes follow
 		var follow = function(lead){
 			$('.followFit').css('font-size', lead);
 		};
-      // Resizer() resizes items based on the object width divided by the compressor * 10
+      // Resizer() resizes items based on the object width divided by the compressor * 10 (Tweaked to 11.5)
       var resizer = function () {
         $this.css('font-size', Math.max(Math.min($this.width() / (compressor*11.5), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
 		var lead = $this.css('font-size');		
