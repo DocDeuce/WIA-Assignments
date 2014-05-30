@@ -1,6 +1,7 @@
 body{
     width: 100%;
 	margin: 0;
+	background:url(../images/bckgrnd.jpg);
 }
 #content{
 	clear: both;
@@ -46,10 +47,10 @@ svg, svg img {
   	height: 100%;
 }
 header{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
-    max-width: 100%;
+    width: 94%;
+    max-width: 94%;
 }
 #navi{
 	display: block;
@@ -97,13 +98,14 @@ footer p{
 #audio{
 	margin-top: 25px;	
 }
-.leftLarge, .leftSmall, .rightLarge, .rightSmall{
+.leftLarge, .leftSmall, .rightLarge, .rightSmall, .middle{
 	border-bottom: 20px solid #30C9CE;
 	box-shadow: 0px 0px 3px #1A6E84;
 	padding: 15px 4% 20px 4%;	
 	margin: 0;
 	margin-bottom: 26px;
 	overflow: hidden;
+	background-color: rgba(255,255,255,.6);
 }
 .leftLarge, .leftSmall{
 	float: left;	
@@ -121,10 +123,7 @@ footer p{
 .rightSmall{
 	width: 28.3%;
 }
-.middle{
-	border-bottom: 20px solid #30C9CE;
-	box-shadow: 0px 0px 3px #1A6E84;
-	padding: 15px 4% 20px 4%;	
+.middle{	
 	margin: 0 auto;
 	width: 80%;
 	clear:both;
